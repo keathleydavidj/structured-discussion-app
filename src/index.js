@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 
-class HelloMessage extends React.PureComponent {
-  render() {
-    return <div>Hello {this.props.name}</div>;
-  }
-}
+import './index.css';
 
 let mountNode = document.getElementById('app');
-ReactDOM.render(<HelloMessage name="David" />, mountNode);
+ReactDOM.render(<App />, mountNode);
